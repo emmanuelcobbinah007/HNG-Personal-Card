@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+    color: #2C3E50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile Card */
+.profile-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and content */
+    max-width: 700px;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+/* Profile Picture */
+.profile-pic {
+    margin: 0px 10px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Profile Details */
+.profile-details {
+    flex: 1;
+}
+
+/* Text Styles */
+.full-name {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #2C3E50;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2ECC71;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Contact Details */
+.location, .email, .current-time {
+    font-size: 0.9em;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.social-links a {
+    font-size: 1.5em;
+    color: #2C3E50;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #2ECC71;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}

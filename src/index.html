@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="profile-card" data-testid="profile-card">
+        <img src="img/Pic.jpg" alt="Profile Picture" class="profile-pic" data-testid="profilePicture">
+        <div class="profile-details">
+            <h1 class="full-name" data-testid="fullName">Emmanuel Cobbinah</h1>
+            <h2 class="job-title" data-testid="jobTitle">Full-Stack Web Developer</h2>
+            <p class="bio" data-testid="shortBio">
+
+                Hi! I’m Emmanuel Cobbinah, a Full-Stack Web Developer based in Accra, Ghana.
+                <br />
+                Crafting seamless, interactive, and visually stunning web experiences is my specialty.
+                Passionate about React, JavaScript, and modern web technologies, I build applications that don’t just work—but feel incredible to use.
+            </p>
+            <p class="location" data-testid="currentLocation"><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+            <p class="email" data-testid="emailAddress"><i class="fas fa-envelope"></i> emmanuelcobbinah707@gmail.com</p>
+            <div class="social-links" data-testid="socialLinks">
+                <a href="https://www.linkedin.com/in/emmanuel-cobbinah-606a98297/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/emmanuelcobbinah007" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Emmanue07780580" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://medium.com/@ecobbinahbuz" target="_blank"><i class="fa-brands fa-medium"></i></a>
+            </div>
+            <p class="current-time" data-testid="currentTimeUTC">UTC Time: <span id="utc-time"></span></p>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
